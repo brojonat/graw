@@ -3,8 +3,8 @@ package graw
 import (
 	"log"
 
-	"github.com/turnage/graw/botfaces"
-	"github.com/turnage/graw/reddit"
+	"github.com/brojonat/graw/botfaces"
+	"github.com/brojonat/graw/reddit"
 )
 
 func launch(

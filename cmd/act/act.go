@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/turnage/graw/reddit"
-	"gopkg.in/alecthomas/kingpin.v2"
+	"github.com/alecthomas/kingpin/v2"
+	"github.com/brojonat/graw/reddit"
 )
 
 var (
