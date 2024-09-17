@@ -2,7 +2,7 @@ package reddit
 
 import (
 	"bytes"
-	"io/ioutil"
+	"os"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/turnage/redditproto"
@@ -22,7 +22,7 @@ func load(filename string) (string, App, error) {
 
 // loadAgentFile reads a user agent from a protobuffer file and returns it.
 func loadAgentFile(filename string) (*redditproto.UserAgent, error) {
-	buf, err := ioutil.ReadFile(filename)
+	buf, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
