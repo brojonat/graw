@@ -119,7 +119,7 @@ func User(
 	<-chan *reddit.Comment,
 	error,
 ) {
-	path := "/user/" + user
+	path := "/u/" + user
 	posts, comments, _, err := streamFromPath(scanner, kill, errs, path)
 	return posts, comments, err
 }
